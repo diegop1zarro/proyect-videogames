@@ -1,0 +1,20 @@
+.inputSearch{
+    color: white;
+    background-color: rgba(67, 114, 116, 0.705);
+    border-radius: 6px;
+    border-color: #000236a1;
+    font-size: 15px;
+}
+.botonSearch{
+    background-color: rgba(67, 109, 110, 0.644);
+    color:white;
+    border-radius: 6px;
+    border-color: #000236a1;
+font-size: 15px;
+}
+.errorSearch{
+    color: red;
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    font-size: 20px;
+    position: fixed;
+}

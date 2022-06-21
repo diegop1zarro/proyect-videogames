@@ -1,0 +1,30 @@
+
+.containerCard{
+  width: 700px;
+  height: auto;
+ display: flex;
+ flex-wrap: wrap;
+background-color:#2f2f2fa4;
+flex-direction: column;
+margin-left: 300px;
+align-items: center;
+margin-top: 20px;
+
+}
+.imagenCard{
+    width: 500px;
+  height: 300px;
+  padding-left: 50px;
+}
+.infosCard{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+} 
+
+/* margin-left: 600px; */
+.titleCard{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
