@@ -31,7 +31,7 @@ const GameDetail = () => {
         <NavBar/> 
         { gameDetails.name ? 
         <div className='CardDetail'>
-            {gameDetails.CreateDB ? <button className='botonDelete' onClick={(e)=>handleDelete(e)}>delete</button> : null}
+            {gameDetails.CreateDB ? <button className='botonDeleteJuego' onClick={(e)=>handleDelete(e)}>Eliminar juego</button> : null}
             <h1 className='titleDetail'>{gameDetails.name}</h1>
             <img className='imagenDetail'  src={gameDetails.image} alt={gameDetails.name}/>
             <div className='infosDetail'> 

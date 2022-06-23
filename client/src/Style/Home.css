@@ -45,6 +45,8 @@
    align-items: center;
    padding: 30px 30px;
    box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .titleFilter{
@@ -55,6 +57,8 @@
    font-size: 20px;
    height: 3px;
    margin-top: 0px ; 
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 
 }
 /* .selectores{
@@ -72,16 +76,22 @@ select{
    background-color: #00011da1;
    border-radius: 6px;
    border-color: cadetblue;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 option{
    background-color: black;
    color: cadetblue;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .botonFilter{
    background-color: #000236a1;
    color: cadetblue;
    border-radius: 6px;
    border-color: cadetblue;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .botonRefresh{
    background-color: #000236a1;
@@ -90,6 +100,8 @@ option{
    border-color: cadetblue;
 padding: 5px;
 font-size: 18px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .SRC{
    height: 50px;
@@ -108,5 +120,7 @@ font-size: 18px;
 .errorHome{
    color: white;
    font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 
 }

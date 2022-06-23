@@ -47,27 +47,42 @@
  .titleDetail{
    font-size: 50px;
    color: cadetblue;
+   font-family: serif;
+   
+
  }
  .infosDetail{
    display: flex;
    align-items: baseline;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
  h4{
    font-size: 20px;
    color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
  p{
    color: cadetblue;
    font-size: 17px;
    margin-left: 6px;
+   /* font-family: serif; */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
  }
- .botonDelete{
-   background-color: #000236a1;
-   color: cadetblue;
+ .botonDeleteJuego{
+   background-color: #4e0000d0;
+   color: white;
    border-radius: 6px;
-   border-color: cadetblue;
-padding: 10px;
-font-size: 15px;
+   border-color: white;
+padding: 5px;
+font-size: 20px;
+display: flex;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+ .botonDeleteJuego:hover{
+   background-color: rgba(63, 2, 2, 0.603);
  }
  /* width: 90%;
     max-width: 120rem;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch , useSelector} from 'react-redux';
-// import { Link, NavLink } from 'react-router-dom';
-import { getAllGames,getByName, limpiarEstadoHome,Refresh,filterByOrder , getAllGenres , filterDB , filterByGenres,filterByOrderRating} from '../../Redux/Actions/Actions.js'
+
+import { getAllGames,limpiarEstadoHome,Refresh,filterByOrder , getAllGenres , filterDB , filterByGenres,filterByOrderRating} from '../../Redux/Actions/Actions.js'
 import CardGame from '../CardGame/CardGame.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import Paginate from '../Paginate/Paginate.jsx'
@@ -17,7 +17,7 @@ const allGenres = useSelector((state)=> state.AllGenres)
 useEffect(()=>{
   dispatch(getAllGames())
   dispatch(getAllGenres())
-  setPaginaActual(1)
+  // setPaginaActual(1)
   
 },[dispatch])
 console.log(games)
@@ -32,21 +32,12 @@ const paginado = (nroDePagina)=>{
   setPaginaActual(nroDePagina)
 }
 
-// function handleInputSearch(e){
-//   e.preventDefault()
-  
-//   setName(e.target.value)
-//   // setError(validacion(e.target.value))
-//   // /^[0-9a-zA-ZÁ-ÿ.:-\s]{0,40}$/;
-//   console.log(name)
-// }
-// function handleSubmitSearch(e){
-//   e.preventDefault()
-//   dispatch(limpiarEstadoHome())
-//   dispatch(getByName(name))
-//   setName('')
-//   // setPaginaActual(1)
-// }  
+const prevPage = () => {
+ setPaginaActual( paginaActual - 1 );
+}
+const NextPage = () => {
+ setPaginaActual( paginaActual +1);
+} 
 
 
 //FILTROS
@@ -155,10 +146,14 @@ return (
       <Search/> 
 </div>
       <Paginate 
+      paginaActual={paginaActual}
+      prevPage = {prevPage}
+      NextPage = {NextPage}
       gamesPorPage={gamesPorPage}
       games={games.length}
       paginado= {paginado}
       />
+
       { games.error || games.errorDB ? <div className='errorHome'> no se ha encontrado el resultado</div>:
       GamesActuales.length > 0 ? (
         GamesActuales?.map((game) => {
