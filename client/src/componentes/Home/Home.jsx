@@ -6,6 +6,7 @@ import CardGame from '../CardGame/CardGame.jsx';
 import NavBar from '../NavBar/NavBar.jsx';
 import Paginate from '../Paginate/Paginate.jsx'
 import Search from '../Search/Search.jsx';
+import Loading from '../Loading/Loading.jsx'
 import '../../Style/Home.css'
 import { Link } from 'react-router-dom';
 
@@ -42,6 +43,7 @@ const NextPage = () => {
 
 //FILTROS
 const [orden , setOrden]= useState()
+
 const [genres , setGenres] = useState({
   option: []
 })
@@ -99,7 +101,7 @@ return (
    <div >
           <p  className='titleFilter'>Alfabeticamente</p>
 <select className='selectores' onChange={(e)=> handleSortAlf(e)}>
-<option  value='selecciona' disabled selected>Selecciona una opción</option>
+<option  value='seleccionar' disabled selected>Selecciona una opción</option>
  <option className='option' value='A_Z' >A - Z</option>
  <option className='option' value='Z_A' >Z - A</option>
 </select>
@@ -168,12 +170,8 @@ return (
              genres={game.CreateDB ?  game.genres.map(e=> e.name + +' , ') :game.genres.map(e=> e + ' , ')}
             // CreadoPorDiego={ game.Creado_por_Diego ? game.Creado_por_Diego: 'Existente'}
             /> </div> ) } )
-            ): 
-            <div>
-              <div className="spinner"></div>
-                    <p>cargando...</p>
-             </div>       
-               
+            ): <Loading/>
+                   
           }
         
             </div>

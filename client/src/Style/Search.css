@@ -27,3 +27,14 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 }
+@media screen and (max-width: 500px) {
+    .errorSearch{
+        color: red;
+        /* background-color: rgba(0, 0, 0, 0.479); */
+        font-size: 12px;
+        position:absolute;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+    }
+}

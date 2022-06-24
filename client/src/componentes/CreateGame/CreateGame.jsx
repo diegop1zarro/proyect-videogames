@@ -204,10 +204,10 @@ placeholder='url image' onChange={(e)=>handleInputChange(e)} />
 </div>    
 
 
-{input.genres?.map(temperamento=>
-    <div className='inputsPYG' key={temperamento}>
-       <p>{temperamento}</p> 
-<button className='botonDelete' onClick={()=> handleDelete(temperamento)}>x</button>
+{input.genres?.map(genero=>
+    <div className='inputsPYG' key={genero}>
+       <p>{genero}</p> 
+<button className='botonDelete' onClick={()=> handleDelete(genero)}>x</button>
     </div>
 )}
 

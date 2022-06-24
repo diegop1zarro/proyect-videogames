@@ -1,9 +1,10 @@
 import {React, useEffect, useState,} from 'react'
 import { useDispatch, useSelector, } from 'react-redux';
-import { useParams } from 'react-router';
+import { useParams , useNavigate } from 'react-router';
+import {NavLink} from 'react-router-dom'
 import { getAllDetails ,limpiarEstadoDetail , deleteGame } from '../../Redux/Actions/Actions.js';
 import NavBar from '../NavBar/NavBar.jsx';
-import { useNavigate } from 'react-router';
+import Loading from '../Loading/Loading.jsx'
 import '../../Style/GameDetail.css'
 
 
@@ -29,6 +30,9 @@ const GameDetail = () => {
         return (
             <div>
         <NavBar/> 
+        <NavLink className='algo' to='/home'>
+            <button className='backDetail'>regresar</button>
+        </NavLink>
         { gameDetails.name ? 
         <div className='CardDetail'>
             {gameDetails.CreateDB ? <button className='botonDeleteJuego' onClick={(e)=>handleDelete(e)}>Eliminar juego</button> : null}
@@ -63,10 +67,7 @@ const GameDetail = () => {
             {/* <p>Platforms:  {gameDetails.CreateDB? gameDetails.platforms: gameDetails.platforms?.map(e=> e + ',')}</p>  */}
             </div> 
         </div>
-      :<div>
-         <div className='loading'></div>
-         <p>cargando...</p>
-         </div>
+      : <Loading/>
          }
            
        </div>
