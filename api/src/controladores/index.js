@@ -5,7 +5,7 @@ const AllInfomock = require('../../info.json')
 
 async function getDataApi (){
  try{
-  //  let api =[]
+   let api =[]
 //    let apiUrl=`https://api.rawg.io/api/games?key=${YOUR_API_KEY}`
 //    for(let i=0; i < 5; i++){
 
@@ -26,30 +26,30 @@ async function getDataApi (){
 //  }
 // return api
 
-//   let i = 0
-//    let apiUrl=`https://api.rawg.io/api/games?key=${YOUR_API_KEY}`
-//    while(i < 5){
+  let i = 0
+   let apiUrl=`https://api.rawg.io/api/games?key=${YOUR_API_KEY}`
+   while(i < 5){
 
-//      let pages = await axios.get(apiUrl)
-//      pages.data.results?.map((e)=>{
-//       api.push({
-//         id: e.id,
-//           name: e.name,
-//           image: e.background_image,
-//           genres: e.genres?.map(e=>e.name) ,
-//           rating: e.rating,
-//         platforms: e.platforms?.map(e=>e.platform.name),
+     let pages = await axios.get(apiUrl)
+     pages.data.results?.map((e)=>{
+      api.push({
+        id: e.id,
+          name: e.name,
+          image: e.background_image,
+          genres: e.genres?.map(e=>e.name) ,
+          rating: e.rating,
+        platforms: e.platforms?.map(e=>e.platform.name),
           
-//       })
-//      })
-//     apiUrl =  pages.data.next  
-//  i++
-//  }
-// return api
+      })
+     })
+    apiUrl =  pages.data.next  
+ i++
+ }
+return api
 
 
 
-return AllInfomock
+// return AllInfomock
 // for(let i = 1 ; i <= 5 ; i++){
 
   // let informacioon = await axios.get(`https://api.rawg.io/api/games?key=${YOUR_API_KEY}&page=${i}`)

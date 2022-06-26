@@ -167,7 +167,7 @@ return (
              name= {game.name}
              image= {game.image}
              id={game.id}
-             genres={game.CreateDB ?  game.genres.map(e=> e.name + +' , ') :game.genres.map(e=> e + ' , ')}
+             genres={game.CreateDB ?  game.genres.map(e=> e.name +' , ') :game.genres.map(e=> e + ' , ')}
             // CreadoPorDiego={ game.Creado_por_Diego ? game.Creado_por_Diego: 'Existente'}
             /> </div> ) } )
             ): <Loading/>
