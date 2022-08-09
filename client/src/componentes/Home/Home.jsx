@@ -133,9 +133,9 @@ return (
    <p className='titleFilter'>Juegos...</p>
 <select className='selectores' onClick={(e)=> handleDB(e)}>
 <option defaultValue='' disabled selected>Selecciona una opción</option>
-  <option className='option' value='Todos'>All games</option>
-  <option className='option' value='existentes'>Existings</option>
-  <option className='option' value='InDataBase'>Created by me</option>
+  <option className='option' value='Todos'>Todos los juegos</option>
+  <option className='option' value='existentes'>Existentes</option>
+  <option className='option' value='InDataBase'>Creados por mí</option>
 </select>
 </div>
 </div>
@@ -143,7 +143,7 @@ return (
 <div className='SRC'>
       <button className='botonRefresh' onClick={(e)=> handleRefresh(e)}> Refresh page</button>
       <Link to='/videogames'>
-      <button className='botonRefresh'> crear games</button>
+      <button className='botonRefresh'> Crear Juegos</button>
       </Link>
       <Search/> 
 </div>
