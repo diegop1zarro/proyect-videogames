@@ -6,11 +6,8 @@ import '../../Style/Search.css'
 // /^[0-9a-zA-ZÁ-ÿ.:-\s]{0,40}$/
 
 function validacion(name){
-    // ^[^$%&|<>#]*$
-    // /^[A-Za-z0-9]+$/g
     let error = ''
     if(!/^[A-Za-z0-9-ñ\s]+$/g.test(name)){
-        // if(/[$%&|<>#]/.test(name)){
         error = 'no se pueden colocar caracteres especiales'
     }else if(name.length > 30){
         error = 'no se puede colocar mas de 30 letras'
@@ -34,6 +31,7 @@ function handleSubmitSearch(e){
     const errorSave = validacion(name)
     if(Object.values(errorSave).length !== 0){
         alert('no debes tener errores para poder buscar')
+        setError('')
     }else{
     e.preventDefault()
     // navegar('/home')
