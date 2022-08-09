@@ -78,7 +78,8 @@ export function deleteGame(id){
    await axios.delete('http://localhost:3001/delete/'+ id)
     .then(()=>{
       dispatch({
-        type:DELETE_GAME
+        type:DELETE_GAME ,
+        payload:id
       })
     })
   }
