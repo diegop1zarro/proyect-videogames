@@ -12,7 +12,7 @@
 }
 
 .titleFilter{
-   color:var(--primaryColor);
+   color:var(--white);
    display: flex;
    flex-direction: column;
    align-items: stretch;
@@ -51,8 +51,18 @@
 }
 
 @media screen and (max-width: 500px) {   
+   .filtros{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 2px;
+   }
+   .SRC{
+      width: 100%;
+   }
    .titleFilter{
       font-size: 10px;
+      margin: 10px;
    }
    .botonRefresh{
    font-size: 10px;   
