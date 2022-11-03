@@ -57,7 +57,16 @@
     .imagenDetail{
       width: 300px;
     }
+    .infosDetail{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .infosDetail p {
+      margin: 0px;
+      padding: 0px;
+    }
     .titleDetail{
-      font-size: 40px;
+      font-size: 30px;
     }
  }
