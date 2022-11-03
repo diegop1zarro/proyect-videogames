@@ -1,73 +1,38 @@
-
 .filtros{
    height: 50px;
    width: 100%;
    top: 0;
    left: 0;
-   /* background-color: #7a38247c; */
-   background-color: rgba(8, 16, 39, 0.527);
+   background-color:var(--secondaryBackground);
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 30px 30px;
    box-sizing: border-box;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 .titleFilter{
-   color: rgb(0, 225, 255);
+   color:var(--primaryColor);
    display: flex;
    flex-direction: column;
    align-items: stretch;
    font-size: 20px;
    height: 3px;
    margin-top: 0px ; 
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
-}
-/* .selectores{
-   color: cadetblue;
-   background-color: #00011da1;
-   border-radius: 6px;
-   border-color: cadetblue;
-}
-.option{
-   background-color: black;
-   color: cadetblue;
-} */
-select{
-   color: cadetblue;
-   background-color: #00011da1;
-   border-radius: 6px;
-   border-color: cadetblue;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-option{
-   background-color: black;
-   color: cadetblue;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .botonFilter{
-   background-color: #000236a1;
-   color: cadetblue;
+   background-color: var(--secondaryBackground);
+   color:var(--primaryColor);
    border-radius: 6px;
-   border-color: cadetblue;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+   border:1px solid var(--primaryColor);
 }
 .botonRefresh{
-   background-color: #000236a1;
-   color: cadetblue;
+   background-color: var(--secondaryBackground);
+   color:var(--primaryColor);
    border-radius: 6px;
-   border-color: cadetblue;
-padding: 5px;
-font-size: 18px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+   border:1px solid var(--primaryColor);
+   padding: 5px;
+   font-size: 18px;
 }
 .SRC{
    height: 50px;
@@ -75,106 +40,21 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    top: 0;
    left: 0;
    display: flex;
-   /* justify-content: space-between; */
    justify-content: space-around;
    align-items: center;
    padding: 30px 30px;
    box-sizing: border-box;
-   /* background-color: #2f2f2fa4; */
-
 }
 .errorHome{
-   color: white;
+   color:var(--white);
    font-size: 20px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
 }
 
-@media screen and (max-width: 500px) {
-    .filtros{
-      height: 50px;
-      width: 100%;
-      top: 0;
-      left: 0;
-      /* background-color: #7a38247c; */
-      background-color: rgba(8, 16, 39, 0.527);
-      display: flex;
-      align-items: center;
-      padding: 30px 30px;
-      box-sizing: border-box;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      justify-content: center;
-     
-   
-   }
-   
+@media screen and (max-width: 500px) {   
    .titleFilter{
-      color: rgb(0, 225, 255);
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
       font-size: 10px;
-      height: 3px;
-      margin-top: 0px ; 
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
-   
-   }
-   select{
-      color: cadetblue;
-      background-color: #00011da1;
-      border-radius: 6px;
-      border-color: cadetblue;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 6px;
-   
-   }
-   option{
-      background-color: black;
-      color: cadetblue;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 10px;
-   
-   }
-   .botonFilter{
-      background-color: #000236a1;
-      color: cadetblue;
-      border-radius: 6px;
-      border-color: cadetblue;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
    }
    .botonRefresh{
-      background-color: #000236a1;
-      color: cadetblue;
-      border-radius: 6px;
-      border-color: cadetblue;
-   padding: 5px;
-   font-size: 10px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
+   font-size: 10px;   
    }
-   .SRC{
-      height: 50px;
-      width: 100%;
-      top: 0;
-      left: 0;
-      display: flex;
-      /* justify-content: space-between; */
-      justify-content: space-around;
-      align-items: center;
-      padding: 30px 30px;
-      box-sizing: border-box;
-      /* background-color: #2f2f2fa4; */
-   
-   }
-   .errorHome{
-      color: white;
-      font-size: 20px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
-   
-   }
-    
  }

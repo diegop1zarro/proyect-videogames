@@ -5,14 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-/* background: linear-gradient(rgb(0, 0, 0),rgb(3, 0, 20) , rgba(4, 4, 24, 0.945) , rgba(34, 13, 34, 0.973) ,rgb(22, 1, 22), rgba(3, 3, 31, 0.938) ,rgb(1, 1, 27), rgb(0, 0, 0)) ; */
-background-color: rgba(33, 33, 41, 0.651);
+/* background-color: rgba(33, 33, 41, 0.651);
 background-image: url(https://static.vecteezy.com/system/resources/previews/001/905/522/non_2x/dark-blue-background-free-photo.jpg) ;
 height: 700px;
 background-size: cover;
 background-repeat:no-repeat;
 background-position: center center;
-background-attachment:fixed;
+background-attachment:fixed; */
+background-color: var(--primaryBackground);
 }
 
 code {

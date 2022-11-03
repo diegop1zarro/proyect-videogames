@@ -2,84 +2,54 @@
  .CardDetail{
    width: 800px;
    height: auto;
-   background-color: rgba(31, 32, 56, 0.753);
+   background-color: var(--secondaryBackground);
    position: relative;
    margin-left: 300px;
  }
  .imagenDetail{
    height: 400px;
    width: 700px;
+   object-fit: cover;
  }
  .titleDetail{
    font-size: 50px;
-   color: cadetblue;
+   color:var(--primaryColor);
    font-family: serif;
-   
-
  }
  .infosDetail{
    display: flex;
    align-items: baseline;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
- h4{
-   font-size: 20px;
-   color: white;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
- p{
-   color: cadetblue;
-   font-size: 17px;
-   margin-left: 6px;
-   /* font-family: serif; */
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
- }
  .botonDeleteJuego{
-   background-color: #4e0000d0;
-   color: white;
+   background-color: var(--btnDelete);
+   color: var(--white);
    border-radius: 6px;
-   border-color: white;
-padding: 5px;
-font-size: 20px;
-display: flex;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border:1px solid var(--white);
+   padding: 5px;
+   font-size: 20px;
+   display: flex;
 
 }
  .botonDeleteJuego:hover{
-   background-color: rgba(63, 2, 2, 0.603);
+   background-color:var(--primaryColor);
  }
- /* width: 90%;
-    max-width: 120rem;
-    margin: 1px auto;
-    background: rgba(104, 100, 100, 0.459);
-    padding: 18px 18px;
-    box-shadow: 3px -1px 50px -11px rgba(0,0,0,1);
-    -webkit-box-shadow: 3px -1px 50px -11px rgba(0,0,0,1);
-    -moz-box-shadow: 3px -1px 50px -11px rgba(0,0,0,1); */
-
 .backDetail{
    text-decoration: none;
-   background-color: #000236a1;
-   color: cadetblue;
-   border-radius: 6px;
-   border-color: cadetblue;
-padding: 5px;
-font-size: 18px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-display: flex;
+   background-color:var( --secondaryBackground);
+   color:var(--primaryColor);
+   border-radius: 3px;
+   border:1px solid var(--primaryColor);
+   padding: 5px;
+   font-size: 18px;
+   display: flex;
 }
-.algo{
+.linkRegresar{
    text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
    .CardDetail{
       width: 400px;
-      height: auto;
-      background-color: rgba(31, 32, 56, 0.753);
-      position: relative;
       margin-left:0px;
     }
     .imagenDetail{
@@ -88,9 +58,5 @@ display: flex;
     }
     .titleDetail{
       font-size: 40px;
-      color: cadetblue;
-      font-family: serif;
-      
-   
     }
  }

@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -6,7 +10,38 @@
   height: 40vmin;
   pointer-events: none;
 }
+:root {
+  --primaryBackground: #212222;
+  --secondaryBackground: #2f3030;
+  --primaryColor: #affaf4;
+  --greyDark: #7d8792;
+  --headingColor: #2d2e2e;
+  --white: #fff;
+  --black: #000;
+  --sliver: #bac8d3;
+  --btnDelete: #4e0000d0;
+  --red:#fd2222;
+}
+h4{
+  font-size: 20px;
+  color: var(--white);
+}
+p{
+  color: var(--primaryColor);
+  font-size: 17px;
+  margin-left: 6px;
+}
 
+select{
+  color:var(--primaryColor);
+  background-color:var(--headingColor);
+  border-radius: 6px;
+  border-color:var(--primaryColor);
+}
+option{
+  background-color:var(--secondaryBackground);
+  color: var(--primaryColor);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +70,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media screen and (max-width:500px) {
+  select{
+  font-size: 6px;   
+}
+option{
+  font-size: 10px;
+}
 }

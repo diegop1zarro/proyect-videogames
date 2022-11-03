@@ -9,18 +9,21 @@ import '../../Style/Create.css'
   let errors = {};
   if (!/[A-Z]/.test(input.name)) {       // la primera letra en mayusculas
     errors.name = 'La primera letra debe ser en mayusculas';
-  } else if (!/^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$/.test(input.released)) {
+  } 
+  if (!/^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$/.test(input.released)) {
     errors.released = 'debes colocar año, mes y dia separados por un guion en medio';
   }
-  else if(input.rating > 5 || input.rating<0){   // cualquier numero y guiones
+  if(input.rating > 5 || input.rating<0){   // cualquier numero y guiones
     errors.rating = 'las puntuaciones deben ser de 0 a 5'
-  }else if (input.description === 0 || input.description.length > 800){  
+  }
+   if (input.description === 0 || input.description.length > 800){  
     errors.description = 'description es obligatoria y debe contener menos de 800 letras'
   
-  }else if(!input.platforms.length){
+  }
+   if(!input.platforms.length){
     errors.platforms = 'Debes elegir una o mas plataformas'
 }
-  else if(!input.genres.length){
+if(!input.genres.length){
       errors.genres = 'debes elegir un genero '
   }
   return errors;
@@ -132,47 +135,47 @@ function handleDeletePlataforma(Plataforma){
 }
   
 return (
-<div>
+<div className='contenedorCreate'>
     <NavBar/>
 
-<form className='contenedorCreate'  onSubmit={(e)=> handleSubmit(e)}>
+<form className='contenedorMenor' onSubmit={(e)=> handleSubmit(e)}>
     <p> Los datos marcados con un (*) son de caracter obligatorios </p>
-<div className='contenedorMenor'>
-<label className='labelCreate'>Nombre *: </label>  
-<input className='inputsCreate' type='text' value={input.name} name='name' 
+<div>
+<label >Nombre *: </label>  
+<input type='text' value={input.name} name='name' 
 placeholder='Nombre del juego' onChange={(e)=>handleInputChange(e)} />
 {errors.name && (<p className='error'>{errors.name}</p>)}
 </div>
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Descripcion *: </label>
-<input className='inputsCreate' type='text' value={input.description} name='description' 
+<div>
+<label>Descripcion *: </label>
+<textarea type='text' value={input.description} name='description' 
 placeholder='descripcion del juego' onChange={(e)=>handleInputChange(e)} />
 {errors.description && (<p className='error'>{errors.description}</p>)}
 </div>
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Fecha de realizacion *: </label>
-<input className='inputsCreate' type='text' value={input.released} name='released' 
+<div>
+<label>Fecha de realizacion *: </label>
+<input type='text' value={input.released} name='released' 
 placeholder='AAAA-MM-DD' onChange={(e)=>handleInputChange(e)}/>
 {errors.released && (<p className='error'>{errors.released}</p>)}
 </div>
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Rating*: </label>
-<input className='inputsCreate' type='number' value={input.rating} name='rating' 
+<div>
+<label>Rating*: </label>
+<input type='number' value={input.rating} name='rating' 
 placeholder='example: 20-24' onChange={(e)=>handleInputChange(e)} />
 {errors.rating && (<p className='error'>{errors.rating}</p>)}
 </div>
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Image: </label>
-<input className='inputsCreate' type='url' value={input.image} name='image' 
+<div>
+<label>Image: </label>
+<input type='url' value={input.image} name='image' 
 placeholder='url image' onChange={(e)=>handleInputChange(e)} />
 </div>
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Plataformas *: </label>
+<div>
+<label>Plataformas *: </label>
 <select onChange={(e)=> SelectPlatforms(e)}>
 <option defaultValue='' disabled selected>Selecciona las plataformas</option>
 
@@ -191,8 +194,8 @@ placeholder='url image' onChange={(e)=>handleInputChange(e)} />
     </div>
 )}
 
-<div className='contenedorMenor'>
-<label className='labelCreate'>Generos *: </label>
+<div>
+<label>Generos *: </label>
 <select onChange={(e)=> handleSelect(e)}>
 <option defaultValue='' disabled selected>Selecciona los genero</option>
 
@@ -205,13 +208,13 @@ placeholder='url image' onChange={(e)=>handleInputChange(e)} />
 
 
 {input.genres?.map(genero=>
-    <div className='inputsPYG' key={genero}>
+    <div key={genero}>
        <p>{genero}</p> 
 <button className='botonDelete' onClick={()=> handleDelete(genero)}>x</button>
     </div>
 )}
 
-<button type='submit' className='botonCreate'  >Create Game</button>
+<button type='submit' >Create Game</button>
 </form>
 </div>
 );

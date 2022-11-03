@@ -30,7 +30,7 @@ const GameDetail = () => {
         return (
             <div>
         <NavBar/> 
-        <NavLink className='algo' to='/home'>
+        <NavLink className='linkRegresar' to='/home'>
             <button className='backDetail'>regresar</button>
         </NavLink>
         { gameDetails.name ? 
@@ -41,30 +41,25 @@ const GameDetail = () => {
             <div className='infosDetail'> 
             <h4>Genres:</h4>
             <p>{gameDetails.CreateDB? gameDetails.genres?.map(e=> e.name + ' , '): gameDetails.genres?.map(e=> e + ' , ') }</p>
-            {/* <p>Genres: {gameDetails.CreateDB? gameDetails.genres?.map(e=> e.name + ','): gameDetails.genres?.map(e=> e + ',') }</p> */}
             </div>
            <div className='infosDetail'>
             <h4>Description: </h4>
             <p>{gameDetails.description}</p>
-            {/* <p>Description: {gameDetails.description}</p> */}
            </div>
            
            <div className='infosDetail'>
            <h4>Released:  </h4> 
            <p>{gameDetails.released}</p> 
-            {/* <p>Released: {gameDetails.released}</p>  */}
            </div>
 
            <div className='infosDetail'>
             <h4>Rating: </h4> 
             <p>{gameDetails.rating}</p> 
-            {/* <p>Rating:  {gameDetails.rating}</p>  */}
             </div>
 
            <div className='infosDetail'>
             <h4>Platforms: </h4> 
             <p>{gameDetails.CreateDB? gameDetails.platforms: gameDetails.platforms?.map(e=> e + ' , ')}</p> 
-            {/* <p>Platforms:  {gameDetails.CreateDB? gameDetails.platforms: gameDetails.platforms?.map(e=> e + ',')}</p>  */}
             </div> 
         </div>
       : <Loading/>

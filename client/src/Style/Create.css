@@ -1,108 +1,53 @@
-.labelCreate{
-    color: white;
-    font-size: 20px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.inputsCreate{
-    background-color: #2f2f2fa4;
-    color: white;    
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contenedorCreate{
-    background-color: #2f2f2fa4;
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 600px;
-    height: auto;
-}
 .contenedorMenor{
-    display: flex;
-margin-top: 30px;    
-align-content: flex-start;
-    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    background-color: var(--secondaryBackground);
+    border-radius: 3px;
 }
-.botonCreate{
-    background-color: #000236a1;
-    color: cadetblue;
-    border-radius: 6px;
-    border-color: cadetblue;
- padding: 5px;
- font-size: 15px;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+.contenedorMenor button,
+.contenedorMenor textarea,
+.contenedorMenor input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
+.contenedorMenor input:hover ,
+.contenedorMenor button:hover{
+    box-sizing:border-box;
+    background-color: var(--greyDark);
+    color: var(--primaryColor);
+  }
+.contenedorMenor label{
+    color:var(--white);
+    font-size: 20px;
+}
 .botonDelete{
-    background-color: #610303a1;
-    color: white;
+    background-color:var(--btnDelete);
+    color: var(--white);
     border-radius: 6px;
-    border-color: #610303a1;
- padding: 5px;
- font-size: 10px;
- margin-left: 5px;
+    border:1px solid var(--sliver);
+    padding: 5px;
+    font-size: 10px;
+    margin-left: 5px;
 }
 .inputsPYG{
     display: flex;
     align-items: center;
-    background-color:#2f2f2fa4 ;
+    background-color:var( --secondaryBackground);
 }
 .error{
-color: red;
+color:var(--red);
 }
 @media screen and (max-width: 500px) {
-    .labelCreate{
-        color: white;
-        font-size: 15px;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .inputsCreate{
-        background-color: #2f2f2fa4;
-        color: white;    
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .contenedorCreate{
-        background-color: #2f2f2fa4;
-        margin: 0 auto;
-        margin-top: 50px;
-        width: 400px;
-        height: auto;
-    }
     .contenedorMenor{
-        display: flex;
-    margin-top: 30px;    
-    align-content: flex-start;
-        align-items: center;
+        width: 100%;
     }
-    .botonCreate{
-        background-color: #000236a1;
-        color: cadetblue;
-        border-radius: 6px;
-        border-color: cadetblue;
-     padding: 5px;
-     font-size: 15px;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    
-    }
-    
-    .botonDelete{
-        background-color: #610303a1;
-        color: white;
-        border-radius: 6px;
-        border-color: #610303a1;
-     padding: 5px;
-     font-size: 10px;
-     margin-left: 5px;
-    }
-    .inputsPYG{
-        display: flex;
-        align-items: center;
-        background-color:#2f2f2fa4 ;
-    }
-    .error{
-    color: red;
-    font-size: 15px;
-    }
-
 }
