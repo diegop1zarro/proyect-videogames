@@ -47,10 +47,10 @@ return(
     className='inputSearch'
     type='text'
     value={name}
-    placeholder=' search by name'
+    placeholder='buscar por nombre'
     onChange={(e)=> handleInputSearch(e)}
     />
-   <button className='botonSearch' type='submit' onClick={(e)=> handleSubmitSearch(e)}>search</button>
+   <button className='botonSearch' type='submit' onClick={(e)=> handleSubmitSearch(e)}>buscar</button>
      {error && (<div className='errorSearch'>{error}</div>)}
    </div>
    )
