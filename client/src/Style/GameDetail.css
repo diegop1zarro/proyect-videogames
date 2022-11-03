@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 500px) {
    .CardDetail{
-      width: 400px;
+      width:100%;
     }
     .imagenDetail{
       width: 300px;
