@@ -35,8 +35,10 @@ p{
 select{
   color:var(--primaryColor);
   background-color:var(--headingColor);
-  border-radius: 6px;
-  border-color:var(--primaryColor);
+  border: none;
+  border-bottom: 1px solid var(--primaryColor);
+  cursor: pointer;
+  padding: 2px;
 }
 option{
   background-color:var(--secondaryBackground);
