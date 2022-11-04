@@ -23,9 +23,11 @@
 }
 .botonFilter{
    background-color: var(--secondaryBackground);
-   color:var(--primaryColor);
-   border-radius: 6px;
-   border:1px solid var(--primaryColor);
+   color:var(--white);
+   border: none;
+   border-bottom: 1px solid var(--primaryColor);
+   padding: 3px;
+   margin-left: 2px;
 }
 .botonRefresh{
    background-color: var(--secondaryBackground);
