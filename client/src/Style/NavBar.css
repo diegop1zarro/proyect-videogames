@@ -49,6 +49,6 @@
 }
 
 .list-item a:hover{
-    background-color:var(--secondaryBackground);
-    color:var(--white);
+    background-color: var(--greyDark);
+    color: var(--white);
 }
