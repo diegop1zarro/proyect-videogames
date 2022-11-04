@@ -16,6 +16,7 @@ margin-bottom: 10px;
   height: 300px;
   padding-left: 50px;
   object-fit: cover;
+  margin: 0 auto;
 }
 .infosCard{
   display: flex;
@@ -25,7 +26,7 @@ margin-bottom: 10px;
 
 .titleCard{
   text-decoration: none;
-  color: var(--white);
+  color: var(--primaryColor);
   font-size: 30px;
   font-family: serif;
 

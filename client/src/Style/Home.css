@@ -29,7 +29,7 @@
 }
 .botonRefresh{
    background-color: var(--secondaryBackground);
-   color:var(--primaryColor);
+   color:var(--white);
    border-radius: 6px;
    border:1px solid var(--primaryColor);
    padding: 5px;
