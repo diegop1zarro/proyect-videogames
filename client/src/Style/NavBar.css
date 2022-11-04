@@ -37,13 +37,15 @@
     height: 100%;
     width: 100%;
     align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .list-item a {
     color:var(--white);
     height: 10%;
     padding: 10px 6px ;
-    border-bottom: 10px solid transparent;
+    border: 1px solid var(--primaryColor);
 }
 
 .list-item a:hover{

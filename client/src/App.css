@@ -11,11 +11,11 @@
   pointer-events: none;
 }
 :root {
-  --primaryBackground: #212222;
-  --secondaryBackground: #2f3030;
+  --primaryBackground: #111111;
+  --secondaryBackground: #191a1a;
   --primaryColor: #affaf4;
   --greyDark: #7d8792;
-  --headingColor: #2d2e2e;
+  --headingColor: #1f1f1f;
   --white: #fff;
   --black: #000;
   --sliver: #bac8d3;
